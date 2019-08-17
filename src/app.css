@@ -28,6 +28,22 @@
   width: 250px;
   padding-top: 100px;
   padding-left: 170px;
+  animation: weatherform 5s 1;
+}
+
+@keyframes weatherform {
+  from {
+    padding-top: 0px;
+    opacity: 0;
+  }
+  50% {
+    padding-top: 50px;
+    opacity: 0.5;
+  }
+  to {
+    padding-top: 100px;
+    opacity: 1;
+  }
 }
 
 .information {
@@ -54,4 +70,17 @@
 .output {
   margin-top: 50px;
   font-size: 50px;
+  animation: output 5s 1;
+}
+
+@keyframes output {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
